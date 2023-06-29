@@ -16,7 +16,7 @@ class SecondFragmentAdapter(private val songList: ArrayList<Songs>,
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
-        return ViewHolder(ItemSongListBinding.inflate(LayoutInflater.from(parent.context)))
+        return ViewHolder(ItemSongListBinding.inflate(LayoutInflater.from(parent.context), parent, false))
 
     }
 

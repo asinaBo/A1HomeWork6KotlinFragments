@@ -16,7 +16,7 @@ class DetailFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-     binding = FragmentDetailBinding.inflate(inflater,container,false)
+      binding = FragmentDetailBinding.inflate(inflater,container,false)
         return binding.root
 
 
@@ -29,7 +29,7 @@ class DetailFragment : Fragment() {
             if (result != null) {
                 binding.tvDetail.text = result.songName
                 binding.tvDetail2.text = result.singerName
-                //binding.imgDetail.setImageResource(R.id.img_detail)
+                binding.imgDetail.setImageResource(result.imageId)
         }
     }
 
